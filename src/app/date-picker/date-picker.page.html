@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>date-picker</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)]="myDate">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker touchUi #picker></mat-datepicker>
+  </mat-form-field>
+  <p>{{myDate}}</p>
+</ion-content>

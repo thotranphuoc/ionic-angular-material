@@ -1,0 +1,11 @@
+// install dependencies for material
+npm install --save @angular/material @angular/cdk @angular/animations
+
+// update for material for /themes/global.scss
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+// for datepick component follow module should be included
+import { MatNativeDateModule } from '@angular/material';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';

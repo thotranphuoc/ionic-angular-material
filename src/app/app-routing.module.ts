@@ -14,7 +14,8 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'date-picker', loadChildren: './date-picker/date-picker.module#DatePickerPageModule' }
 ];
 
 @NgModule({
